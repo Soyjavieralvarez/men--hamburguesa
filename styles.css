@@ -107,6 +107,10 @@ body,
   width: auto;
 }
 
+.button_q4_1:hover {
+  background-color: rgb(57, 57, 57) ;
+}
+
 .button_q4_1 a {
   color: white;
 }
@@ -116,6 +120,10 @@ body,
   padding: 20px;
   width: auto;
   border: solid 1px black;
+}
+
+.button_q4_2:hover {
+  background-color: aliceblue;
 }
 
 .button_q4_2 a {
