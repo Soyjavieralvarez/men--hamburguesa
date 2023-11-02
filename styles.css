@@ -135,12 +135,17 @@ body,
     padding: 20px;
   }
 
+  .abrir-menu span {
+    padding: 10px;
+  }
+
   .nav {
     opacity: 0;
     visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.819);
     padding: 1rem;
     bottom: 0;
