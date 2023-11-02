@@ -122,38 +122,37 @@
     /* AUDI Q4 SECTION */ 
 
   .audi-q4 {
-    border: solid 1px red;
-    padding: 60px;
-    margin: 60px;
+    padding: 20px;
+    margin: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
   .img_q4 img {
-    width: 700px;
+    width: 300px;
   }
 
   .text_q4 {
-    border: solid 1px red;
-    padding: 40px;
-    margin: 60px;
+    padding: 20px;
+    margin: 40px;
   }
 
   .h1_q4 {
-    font-size: 50px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .p_q4 {
+    text-align: center;
     font-size: 15px;
   }
 
   .button-q4 {
-    border: solid 1px yellow;
-    padding: 40px 0px;
+    padding: 30px 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -161,7 +160,7 @@
   .button_q4_1 {
     background-color: black;
     padding:20px;
-    width: auto;
+    width: 200px;
   }
 
   .button_q4_1 a {
@@ -171,7 +170,7 @@
   .button_q4_2 {
     background-color: rgb(255, 255, 255);
     padding:20px;
-    width: auto;
+    width: 200px;
     border: solid 1px black;
   }
 
