@@ -1,125 +1,192 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.header {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.abrir-menu, .cerrar-menu {
+  display: none;
+}
+
+.nav-left {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img {
+  margin-left: 30px;
+}
+
+.nav-left span {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.nav-left a {
+  font-weight: 500;
+  color: rgb(177, 177, 177);
+}
+
+.nav-left a:hover {
+  font-weight: 500;
+  color: rgb(26, 24, 24);
+}
+
+.nav-right {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* AUDI Q4 SECTION */
+
+.audi-q4 {
+  padding: 60px;
+  margin: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_q4 img {
+  width: 700px;
+}
+
+.text_q4 {
+  padding: 40px;
+  margin: 60px;
+}
+
+.h1_q4 {
+  font-size: 50px;
+}
+
+.p_q4 {
+  font-size: 15px;
+}
+
+.button-q4 {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.button_q4_1 {
+  background-color: black;
+  padding: 20px;
+  width: auto;
+}
+
+.button_q4_1 a {
+  color: white;
+}
+
+.button_q4_2 {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: auto;
+  border: solid 1px black;
+}
+
+.button_q4_2 a {
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+  /* AUDI Q4 SECTION */
+
+  .abrir-menu, .cerrar-menu {
+    display: block;
   }
-  
-  html,
-  body,
-  #root {
-    height: 100%;
+
+  .abrir-menu {
+    background-color: white;
+    border: none;
+    padding: 20px;
   }
-  
-  .header {
-    background-color: rgb(255, 255, 255);
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.819);
+    padding: 1rem;
+    bottom: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: solid 1px black;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
-  
-  .nav {
-    display: flex;
-    flex-direction: row;
+
+  .cerrar-menu {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.819);
+    border: none;
   }
-  
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .nav-left {
-    width: 90%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
   }
-  
+
   .nav-left img {
-    margin-left: 30px;
+    display: none;
   }
-  
+
   .nav-left span {
-    padding: 10px;
-    margin-right: 15px;
+    padding: 30px;
   }
-  
-  .nav-left a {
-    font-weight: 500;
-    color: rgb(177, 177, 177);
+
+  .nav-left span a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
   }
-  
-  .nav-left a:hover {
-    font-weight: 500;
-    color: rgb(26, 24, 24);
-  }
-  
+
   .nav-right {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
-
-
-  /* AUDI Q4 SECTION */ 
-
-  .audi-q4 {
-    padding: 60px;
-    margin: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .img_q4 img {
-    width: 700px;
-  }
-
-  .text_q4 {
-    padding: 40px;
-    margin: 60px;
-  }
-
-  .h1_q4 {
-    font-size: 50px;
-  }
-
-  .p_q4 {
-    font-size: 15px;
-  }
-
-  .button-q4 {
-    padding: 40px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .button_q4_1 {
-    background-color: black;
-    padding:20px;
-    width: auto;
-  }
-
-  .button_q4_1 a {
-    color: white;
-  }
-
-  .button_q4_2 {
-    background-color: rgb(255, 255, 255);
-    padding:20px;
-    width: auto;
-    border: solid 1px black;
-  }
-
-  .button_q4_2 a {
-    color: rgb(0, 0, 0);
-  }
-
-  @media only screen and (max-width: 767px) {
-
-    /* AUDI Q4 SECTION */ 
 
   .audi-q4 {
     padding: 20px;
@@ -159,7 +226,7 @@
 
   .button_q4_1 {
     background-color: black;
-    padding:20px;
+    padding: 20px;
     width: 200px;
   }
 
@@ -169,7 +236,7 @@
 
   .button_q4_2 {
     background-color: rgb(255, 255, 255);
-    padding:20px;
+    padding: 20px;
     width: 200px;
     border: solid 1px black;
   }
@@ -177,5 +244,4 @@
   .button_q4_2 a {
     color: rgb(0, 0, 0);
   }
-
-   }
+}

@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <div class="root">
       <header class="header">
-        <div class="header-box">
-          <div class="nav">
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>
+          <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-x fa-xl" style="color: #ffffff;"></i></button>
             <div class="nav-left">
               <a href="../../index.html"
                 ><span
@@ -39,30 +41,28 @@
                   ></i></a
               ></span>
             </div>
-          </div>
-        </div>
+        </nav>
+        <script src="./main.js"></script>
       </header>
     </div>
     <section class="audi-q4">
-        <div class="img_q4">
-            <img src="./assets/AUDI-Q4-E-TRON.jpg" alt="">
+      <div class="img_q4">
+        <img src="./assets/AUDI-Q4-E-TRON.jpg" alt="" />
+      </div>
+      <div class="text_q4">
+        <h1 class="h1_q4">Audi Q4 e-tron</h1>
+        <p class="p_q4">
+          Tecnología y dinamismo que redefine la movilidad 100% eléctrica
+        </p>
+        <div class="button-q4">
+          <button class="button_q4_1">
+            <a href="#">Configurar</a>
+          </button>
+          <button class="button_q4_2">
+            <a href="#">Más información</a>
+          </button>
         </div>
-        <div class="text_q4">
-            <h1 class="h1_q4">
-                Audi Q4 e-tron
-            </h1>
-            <p class="p_q4">
-                Tecnología y dinamismo que redefine la movilidad 100% eléctrica
-            </p>
-            <div class="button-q4">
-                <button class="button_q4_1">
-                    <a href="#">Configurar</a>
-                </button>
-                <button class="button_q4_2">
-                    <a href="#">Más información</a>
-                </button>
-            </div>
-        </div>
-      </section>
+      </div>
+    </section>
   </body>
 </html>
